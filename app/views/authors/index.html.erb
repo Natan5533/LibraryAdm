@@ -1,0 +1,11 @@
+<h1>- Authors -</h1>
+<% @authors.each do |author|%>
+
+<p>Name: <%=author.name%>
+|<br> Author ID: <strong><%=author.id%></strong> 
+|<br> Library: <%=author.library.name%> 
+|<br> Email: <%=author.email%> | <%=link_to "Author info", author%></p>
+<br>
+<%end%>
+<%= link_to "New Author", new_author_path %><br>
+<%= link_to "Back from menu", root_path %>

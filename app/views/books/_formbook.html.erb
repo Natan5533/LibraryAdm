@@ -1,0 +1,17 @@
+<h1>Book</h1>
+<%= form_for(@book) do |form| %>
+ <div>
+    <%= form.label "Title", style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+  <div>
+    <%= form.label "Author:", style: "display: block" %>
+    <%= collection_select(:book, :author_id, Author.all, :id, :name) %>
+  </div>
+ 
+
+  <div>
+    <%= form.submit %>
+  </div>
+  <% end %>
+  <%= link_to "Back", books_path %>

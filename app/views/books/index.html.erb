@@ -1,0 +1,8 @@
+<h1>- Books -</h1>
+<% @books.each do |book|%>
+<p>Name: <%=book.title%>
+|<br> Author: <%=book.author.name%> 
+|<br> <%=link_to "Book info", book%></p>
+<%end%>
+<%= link_to "New Book", new_book_path %><br>
+<%= link_to "Back from menu", root_path %>

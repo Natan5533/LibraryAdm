@@ -1,0 +1,25 @@
+ <h1>Library Info</h1>
+ 
+ <p>
+    <strong>Name:</strong>
+    <%= @library.name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= @library.address %>
+  </p>
+  <br>
+  <strong>Authors of <%=@library.name%></strong>
+  <%@authors.each do |author|%>
+  <p> Name: <%=author.name%>
+  | ID: <%=author.id%>
+  </p>
+   <%end%>
+   <br>
+  <p> <%= link_to "Edit this library", edit_library_path(@library) %>
+  </p>
+  <p> <%= link_to "Return for Libraries", libraries_path %>
+  </p>
+  <p>  <%= button_to "Destroy this library", @library, method: :delete %>
+  </p>

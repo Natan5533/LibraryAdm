@@ -1,0 +1,27 @@
+ <h1>Author Info</h1>
+ 
+ <p>
+    <strong>Name:</strong>
+    <%= @author.name %>
+  </p>
+<p>
+    <strong>Library:</strong>
+    <%= @author.library.name %>
+  </p>
+  <p>
+    <strong>Address:</strong>
+    <%= @author.email %>
+  </p>
+   <strong>Books of <%=@author.name%></strong>
+  <%@books.each do |book|%>
+  <p> -Title: <%=book.title%>
+  </p>
+   <%end%>
+   <br>
+
+  <p> <%= link_to "Edit this Author", edit_author_path(@author) %>
+  </p>
+  <p> <%= link_to "Return for Authors", authors_path %>
+  </p>
+  <p>  <%= button_to "Destroy this Author", @author, method: :delete %>
+  </p>

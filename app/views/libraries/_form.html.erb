@@ -1,0 +1,17 @@
+<h1></h1>
+<%= form_for(@library) do |form| %>
+ <div>
+    <%= form.label "Name", style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label "Address", style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+  <% end %>
+  <%= link_to "Back", libraries_path %>

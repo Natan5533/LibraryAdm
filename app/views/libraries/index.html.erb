@@ -1,0 +1,8 @@
+<h1>- Library -</h1>
+<% @libraries.each do |lib|%>
+<p>Name: <%=lib.name%>
+|<br> Address: <%=lib.address%> 
+|<br> <%=link_to "library Info", lib%></p>
+<%end%>
+<%= link_to "New Library", new_library_path %><br>
+<%= link_to "Back from menu", root_path %>
