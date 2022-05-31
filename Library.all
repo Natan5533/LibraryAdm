@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/natan/Library_adm/test/controllers/libraries_controller_test.rb:23 LibrariesControllerTest#test_create:
+
+    [1;34m17[0m: test [31m[1;31m"[0m[31mcreate[1;31m"[0m[31m[0m [32mdo[0m 
+    [1;34m18[0m:   post [31m[1;31m"[0m[31m/libraries[1;31m"[0m[31m[0m,
+    [1;34m19[0m:  [35mparams[0m: { [35mlibrary[0m: {[35mid[0m: [1;34m90[0m,[35mname[0m: [31m[1;31m"[0m[31mamazon[1;31m"[0m[31m[0m, [35maddress[0m: [31m[1;31m"[0m[31mrua sla[1;31m"[0m[31m[0m } }
+    [1;34m20[0m:  assert_response [33m:redirect[0m
+    [1;34m21[0m:  follow_redirect!
+    [1;34m22[0m:  assert_response [33m:success[0m
+ => [1;34m23[0m: 
+    [1;34m24[0m:  assert_equal [1;34;4mLibrary[0m.find([1;34m90[0m).name,[31m[1;31m"[0m[31mamazon[1;31m"[0m[31m[0m
+    [1;34m25[0m: 
+    [1;34m26[0m:  [1;34m#procurar na Library[0m
+    [1;34m27[0m: [32mend[0m
+
