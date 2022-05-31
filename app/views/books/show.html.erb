@@ -6,7 +6,7 @@
   </p>
 <p>
     <strong>Author Name:</strong>
-    <%= @book.author.name %>
+    <%= @book.author.try(:name) %>
   </p>
  
 

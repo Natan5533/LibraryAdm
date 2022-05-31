@@ -1,7 +1,7 @@
 <h1>- Books -</h1>
 <% @books.each do |book|%>
 <p>Name: <%=book.title%>
-|<br> Author: <%=book.author.name%> 
+|<br> Author: <%=book.author.try(:name)%> 
 |<br> <%=link_to "Book info", book%></p>
 <%end%>
 <%= link_to "New Book", new_book_path %><br>
