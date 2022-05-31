@@ -1,9 +1,14 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  address: MyString
+library_one:
+  name: Kalunga
+  address: rua 1
+
 
 two:
   name: MyString
   address: MyString
+
+  
+#library_name_empty:
+ #  address: rua 1
