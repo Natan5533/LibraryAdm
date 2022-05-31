@@ -11,8 +11,8 @@ class AuthorTest < ActiveSupport::TestCase
   test "author has many Books" do 
     library = Library.create(name: "TestLibrary", address: "av test")
     author = Author.create(name: "Flavio", email: "test@test", library_id: library.id)
-    book1 = Book.create(title: "book1", author_id: author.id, library_id: library.id)
-    book2 = Book.create(title: "book2", author_id: author.id, library_id: library.id)
+    book1 = Book.create(title: "book1", author_id: author.id,)
+    book2 = Book.create(title: "book2", author_id: author.id,)
     books = [book1, book2]
     assert_equal author.books, books
   end 

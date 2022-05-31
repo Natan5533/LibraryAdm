@@ -17,6 +17,13 @@
   </p>
    <%end%>
    <br>
+   <strong>Books of <%=@library.name%></strong>
+  <%@books.each do |book|%>
+  <p> Title: <%=book.title%>
+  | Author: <%=book.author.name%>
+  </p>
+   <%end%>
+   <br>
   <p> <%= link_to "Edit this library", edit_library_path(@library) %>
   </p>
   <p> <%= link_to "Return for Libraries", libraries_path %>

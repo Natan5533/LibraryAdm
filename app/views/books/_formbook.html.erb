@@ -8,13 +8,6 @@
     <%= form.label "Author:", style: "display: block" %>
     <%= collection_select(:book, :author_id, Author.all, :id, :name) %>
   </div>
-    <div>
-    <%= form.label "Library:", style: "display: block" %>
-    <%= collection_select(:book, :library_id, Library.all, :id, :name) %>
-  </div>
-  
- 
-
   <div>
     <%= form.submit %>
   </div>

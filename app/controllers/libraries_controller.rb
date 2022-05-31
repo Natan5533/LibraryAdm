@@ -40,6 +40,7 @@ private
     def set_library
       @library = Library.find(params[:id])
       @authors = Library.find(params[:id]).authors
+      @books = Library.find(params[:id]).books
     end
     def library_params
       params.require(:library).permit(:name, :address)

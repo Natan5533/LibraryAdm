@@ -3,7 +3,7 @@
 
 <p>Name: <%=author.name%>
 |<br> Author ID: <strong><%=author.id%></strong> 
-|<br> Library: <%=author.library.name%> 
+|<br> Library: <%=author.library.try(:name)%> 
 |<br> Email: <%=author.email%> | <%=link_to "Author info", author%></p>
 <br>
 <%end%>
