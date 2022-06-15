@@ -35,6 +35,7 @@ class LibrariesControllerTest < ActionDispatch::IntegrationTest
    assert_response :redirect
    follow_redirect!
    assert_response :success
+   require 'pry';  binding.pry
    library = Library.last
    assert_equal library.name,"Novo nome"
  end
@@ -42,6 +43,7 @@ class LibrariesControllerTest < ActionDispatch::IntegrationTest
   library = Library.create(name: "Delete", address: "rua test")
   delete "/libraries/#{library.id}"
   assert_response :redirect
+
   follow_redirect!
   assert_response :success
  end

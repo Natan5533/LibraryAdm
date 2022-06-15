@@ -16,14 +16,7 @@ class LibraryTest < ActiveSupport::TestCase
 
     assert_equal library.authors,  authors
   end 
-  test "library has many books" do
-    library = Library.create(name: "kalunga", address: "Rua pinheiro")
-    author = Author.create(name: "Jorge", email: "jorge@gmail", library_id: library.id)
-    book1 = Book.create(title: "titulo", author_id: author.id)
-    book2 = Book.create(title: "titulo 2", author_id: author.id)
-    books = [book1, book2]
-    assert_equal library.books, books
-  end 
+ 
   test "empty name error" do
     library = Library.create(address: "Rua pinheiro")
     #require 'pry';  binding.pry
