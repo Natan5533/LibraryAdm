@@ -30,11 +30,6 @@ end
   @library.destroy
   redirect_to libraries_path
 end 
-def destroy
-  @library.destroy
-  redirect_to libraries_path   
-end  
-
 
 private
     def set_library
