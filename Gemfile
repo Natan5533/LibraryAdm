@@ -5,6 +5,8 @@ ruby "3.1.1"
 
 gem 'rubocop', '~> 1.30'
 
+gem 'active_model_serializers'
+
 gem 'rails-controller-testing'
 
 gem 'pry', '~> 0.13.1'
@@ -76,4 +78,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "factory_bot_rails"
 end
