@@ -1,4 +1,5 @@
 class Api::BooksController < ActionController::Base
+    protect_from_forgery with: :null_session
     before_action :set_book, only: %i[ show update destroy ]
     def index
         if params[:title] != nil

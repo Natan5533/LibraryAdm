@@ -1,4 +1,5 @@
 class Api::AuthorsController < ActionController::Base
+    protect_from_forgery with: :null_session
     before_action :set_author , only: %i[ show update destroy ]
 
     def index

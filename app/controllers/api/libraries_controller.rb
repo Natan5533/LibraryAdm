@@ -1,4 +1,5 @@
 class Api::LibrariesController < ActionController::Base
+    protect_from_forgery with: :null_session
     before_action :set_library , only: %i[ show update destroy ]
     
     def index
@@ -15,6 +16,7 @@ class Api::LibrariesController < ActionController::Base
     end
 
     def create
+        require 'pry';  binding.pry
         @library = Library.new(library_params)
         if @library.save
             render json: @library        
