@@ -54,8 +54,10 @@ describe Api::LibrariesController, type: :controller do
         it "create new library" do
             library_params = {library: {name: "Kalunguinha", address: "avenue"}}
             expected_body =  {"id" => 1, "name" => "Kalunguinha", "address" => "avenue"}
+            require 'pry';  binding.pry
 
             expect {  post :create, params: library_params }.to change(Library, :count).by(1)
+            require 'pry';  binding.pry
             expect(response).to have_http_status(:success)
 
             library = JSON.parse(response.body)
@@ -79,6 +81,7 @@ describe Api::LibrariesController, type: :controller do
                 name: "Kalunguinha"
             }}
             expect(response).to have_http_status(:success)
+            require 'pry';  binding.pry
         end
         it "returns error when attributes are empty" do
             library = Library.create(name: "ERROR", address: "1º avenue")
