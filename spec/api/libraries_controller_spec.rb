@@ -104,6 +104,7 @@ describe Api::LibrariesController, type: :controller do
                 id: library.id
             }
             expect(response).to have_http_status(:success)
+            require 'pry';  binding.pry
         end
     end
 end
