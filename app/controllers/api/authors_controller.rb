@@ -11,7 +11,7 @@ class Api::AuthorsController < ActionController::Base
         render json: @authors
     end
     def show
-        render json: @library
+        render json: @author
     end
     def create
         @author = Author.new(author_params)
