@@ -40,8 +40,9 @@ class Api::LibrariesController < ActionController::Base
 
     private 
     def set_library 
-        @library = Library.find(params[:id])
+        @library = Library.find_by(id: params[:id])
         render body: "id invalida", status: 400 if @library == nil
+
     end
     def library_params
         params.require(:library).permit(:name, :address)

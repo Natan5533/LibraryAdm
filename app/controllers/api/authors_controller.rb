@@ -36,7 +36,7 @@ class Api::AuthorsController < ActionController::Base
 
     private
     def set_author
-        @author = Author.find(params[:id])
+        @author = Author.find_by(id: params[:id])
         render body: "id invalida", status: 400 if @author == nil
     end
     def author_params
