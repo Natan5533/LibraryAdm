@@ -11,7 +11,7 @@
 ### Request
 
 `GET Index`
-http: /api/libraries
+http://localhost:3000/api/libraries
 
 ### Response
 
