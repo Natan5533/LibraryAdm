@@ -38,7 +38,7 @@ describe Api::BooksController, type: :controller do
     context "GET show" do
         it "return the book" do
             book = createnewbook
-            
+        
             get :show, params:{
                 id: book.id
             }
