@@ -6,7 +6,7 @@
 
 > Basically there are three crud's for libraries, authors and books The REST API to the example app is described below.
 
-## Get list of Things
+## Get list of Libraries
 
 ### Request
 
@@ -16,50 +16,37 @@ http://localhost:3000/api/libraries
 ### Response
 
     Status = 200
-    [
     {
         "id": 1,
         "name": "Kalunga",
         "address": "Av. figueira grande",
-        "authors": [
-            {
-                "id": 1,
-                "name": "Author",
-                "email": "aa@aaa.com"
-            },
-            {
-                "id": 5,
-                "name": "New Author",
-                "email": "teste@sumup.com"
-            }
-        ],
-        "books": [
-            {
-                "id": 5,
-                "title": "a espera de um milagre"
-            }
-        ]
+        "authors": [],
+        "books": []
     },
     {
         "id": 2,
-        "name": "edited library",
+        "name": "New library",
         "address": "rua amado",
-        "authors": [
-            {
-                "id": 2,
-                "name": "felipe",
-                "email": "ei@gmail"
-            },
-            {
-                "id": 3,
-                "name": "Tuezin",
-                "email": "30@a"
-            }
-        ],
-        "books": [
-            {
-                "id": 3,
-                "title": "New title"
-            }
-        ]
+        "authors": [],
+        "books": []
+    }
+
+## Get one Library
+
+### Request
+
+> this url is used for different http verbs such as DELETE and PUT, in this example it was used for SHOW
+
+`GET Show`
+http://localhost:3000/api/libraries/:id | _id = 2_
+
+### Response
+
+    Status = 200
+    {
+    "id": 2,
+    "name": "library",
+    "address": "rua amado",
+    "authors": [],
+    "books": []
     }
