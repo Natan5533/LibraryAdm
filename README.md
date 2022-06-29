@@ -56,8 +56,9 @@
 ### Params
 
     {
-        "library":{
-        "id": 2
+        "library":
+        {
+            "id": 2
     }}
 
 ### Response
@@ -108,8 +109,8 @@
     {
         "id": 2,
         "library":
-    {
-        "name": "name updated"
+        {
+            "name": "name updated"
     }}
 
 ### Response
@@ -134,7 +135,7 @@
     {
         "library":
         {
-        "id": 7
+            "id": 7
     }}
 
 ### Response
@@ -164,8 +165,7 @@
             "name": "",
     >>>>    "email": "",
     >>>>    "library_id": 1
-    }
-    }
+    }}
 
 ## Books:
 
@@ -179,5 +179,4 @@
         "book":{
     >>>>>   "author_id": 5,
     >>>>>   "title": ""
-    }
-    }
+    }}
