@@ -56,10 +56,10 @@
 ### Params
 
     {
-        "library":
-        {
+        "library": {
             "id": 2
-    }}
+        }
+    }
 
 ### Response
 
@@ -85,7 +85,8 @@
         "library":{
             "name": "New Library",
             "address": "avenue"
-    }}
+        }
+    }
 
 ### Response
 
@@ -108,10 +109,10 @@
 
     {
         "id": 2,
-        "library":
-        {
+        "library": {
             "name": "name updated"
-    }}
+        }
+    }
 
 ### Response
 
@@ -133,10 +134,10 @@
 ### Params
 
     {
-        "library":
-        {
+        "library": {
             "id": 7
-    }}
+        }
+    }
 
 ### Response
 
@@ -165,7 +166,8 @@
             "name": "",
     >>>>    "email": "",
     >>>>    "library_id": 1
-    }}
+        }
+    }
 
 ## Books:
 
@@ -179,4 +181,5 @@
         "book":{
     >>>>>   "author_id": 5,
     >>>>>   "title": ""
-    }}
+        }
+    }
