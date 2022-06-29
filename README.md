@@ -53,6 +53,14 @@
 > `GET Show`
 > http://localhost:3000/api/libraries/:id | _id = 2_
 
+### Params
+
+     {
+    "library":{
+       "id": 2
+    }
+    }
+
 ### Response
 
     Status = 200
