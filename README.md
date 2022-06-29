@@ -55,21 +55,20 @@
 
 ### Params
 
-     {
-    "library":{
-       "id": 2
-    }
-    }
+    {
+        "library":{
+        "id": 2
+    }}
 
 ### Response
 
     Status = 200
     {
-    "id": 2,
-    "name": "library",
-    "address": "rua amado",
-    "authors": [],
-    "books": []
+        "id": 2,
+        "name": "library",
+        "address": "rua amado",
+        "authors": [],
+        "books": []
     }
 
 ## Create new Library
@@ -81,21 +80,20 @@
 
 ### Params
 
-     {
-    "library":{
-        "name": "New Library",
-        "address": "avenue"
-    }
-    }
+    {
+        "library":{
+            "name": "New Library",
+            "address": "avenue"
+    }}
 
 ### Response
 
     {
-    "id": 9,
-    "name": "New Library",
-    "address": "avenue",
-    "authors": [],
-    "books": []
+        "id": 9,
+        "name": "New Library",
+        "address": "avenue",
+        "authors": [],
+        "books": []
     }
 
 ## Update Libraries
@@ -108,21 +106,20 @@
 ### Params
 
     {
-    "id": 2,
-    "library":
+        "id": 2,
+        "library":
     {
         "name": "name updated"
-    }
-    }
+    }}
 
 ### Response
 
     {
-    "id": 2,
-    "name": "name updated",
-    "address": "Avenue",
-    "authors": [],
-    "books": []
+        "id": 2,
+        "name": "name updated",
+        "address": "Avenue",
+        "authors": [],
+        "books": []
     }
 
 ## Delete Library
@@ -135,20 +132,19 @@
 ### Params
 
     {
-    "library":
-    {
+        "library":
+        {
         "id": 7
-    }
-    }
+    }}
 
 ### Response
 
     {
-    "id": 7,
-    "name": "Library",
-    "address": "Avenue ***",
-    "authors": [],
-    "books": []
+        "id": 7,
+        "name": "Library",
+        "address": "Avenue ***",
+        "authors": [],
+        "books": []
     }
 
 ## `Additional Information`
@@ -164,10 +160,10 @@
 ### Params example:
 
     {
-    "author":{
-        "name": "",
-    >>>> "email": "",
-    >>>>"library_id": 1
+        "author":{
+            "name": "",
+    >>>>    "email": "",
+    >>>>    "library_id": 1
     }
     }
 
@@ -180,8 +176,8 @@
 ### Params example:
 
     {
-    "book":{
-       >>>>> "author_id": 5,
-       >>>>> "title": ""
+        "book":{
+    >>>>>   "author_id": 5,
+    >>>>>   "title": ""
     }
     }
